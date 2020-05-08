@@ -20,7 +20,7 @@
 	text-align: center;
 	font-size: 1.5rem;
 }
-@media(max-width: 800px) {
+@media only screen and (max-width: 800px) {
 	.contenido{
 		width: 95%;
 		margin: auto;
@@ -39,7 +39,7 @@
 
 }
 
-@media(min-width: 800px) {
+@media only screen and (min-width: 800px) {
 
 	.contenido{
 		width:7.5rem;
