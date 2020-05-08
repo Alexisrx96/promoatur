@@ -1,0 +1,38 @@
+.content--dev{
+	width: 75vw;
+	align-self: center;
+	font-family: 'Luckiest Guy', cursive;	
+}
+.dev-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.dev-member{
+	font-size: 0.9rem;
+	min-height: 280px;
+	min-width: 250px;
+	width: 16.46vw;
+	height: auto;
+	border: 1px solid #005f69;
+	padding: 10px;
+	margin:  2%;
+}
+.dev-member__code{
+	color: #005f69;
+	font-weight: bold;
+	text-align: center;
+	margin: 0.5%;	
+}
+.dev-member__photo{
+	width: 80%;
+	height: auto;
+	margin: 7px auto;
+	display: block;	
+}
+.content__tittle{
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: #005f69;
+	text-align: center; 
+}

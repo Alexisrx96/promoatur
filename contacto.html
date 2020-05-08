@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promoatur</title>
+</head>
+<body>
+    
+<header class="header">
+        <img class="header__logo" src="img/logo-promoatour.svg" alt="logo">
+        <div class="branding">
+            <h1 class="branding__tittle">Promoatur</h1>
+            <h2 class="branding__sub-tittle">Turismo De Montaña</h2>
+        </div>
+</header>
+<nav class="nav">
+    <ul class="nav__navbar">
+        <li class="navbar-element">
+            <a class="navbar-element__link" href="index.html">
+                <span class="navbar-element__icon navbar-element__icon--home"></span>
+                <span class="navbar-element__text">Inicio</span>
+            </a>
+        </li>
+
+        <li class="navbar-element">
+            <a class="navbar-element__link" href="TourGaleria.html">
+                <span class="navbar-element__icon navbar-element__icon--galery"></span>
+                <span class="navbar-element__text">Galería</span>
+            </a>
+        </li>
+
+        <li class="navbar-element">
+            <a class="navbar-element__link" href="nosotros.html">
+                <span class="navbar-element__icon navbar-element__icon--us"></span>
+                <span class="navbar-element__text">Nosotros</span>
+            </a>
+        </li>
+
+        <li class="navbar-element navbar-element--avtive">
+            <a class="navbar-element__link" href="#">
+                <span class="navbar-element__icon navbar-element__icon--contact"></span>
+                <span class="navbar-element__text">Contacto</span>
+            </a>
+        </li>
+
+        <li class="navbar-element">
+            <a class="navbar-element__link" href="creadores.html">
+                <span class="navbar-element__icon navbar-element__icon--dev"></span>
+                <span class="navbar-element__text">Creadores</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<section class="content content--contact">
+			
+	<form action="thanks.html" method="POST" class="form">
+		<h2 class="form__text form__text--tittle">Pida nuestro cátalogo de viajes</h2>
+		
+		<p class="form__text form__text--message">Somos una comunidad de turismo que realiza caminatas dentro y 
+            fuera de nuestro pais. ¡Atrévete a salir con nosotros!.</p>
+		
+		<div class="form__element">
+            <span class="form__text form__text--required">Destino:</span>
+            <select  class="form__text-input">
+                <option value="1"> TRAVESÍA CHALATECA </option>
+                <option value="2"> CASCADA EL CHORRERON </option>
+                <option value="3"> VOLCAN EL CHINGO</option>
+                <option value="4"> CERRO MIRACAPA </option>
+            </select>
+        </div>
+	
+		
+		<div>
+            <span class="form__text form__text--required">Fecha de salida: </span> 
+            <input type="date" name="fecha" required style="width:35%">
+        </div>
+		<div class="form__element">
+            <span class="form__text form__text--required">Numero de adultos: </span> 
+            <select  class="form__text-input" required>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+                <option value="11"> Más de 10 </option>
+              </select>
+            </div>
+
+          <div class="form__element">
+              <input type="checkbox" value="acepto" class="viaje"> 
+              <span class="form__text">Viajamos con niños </span>
+            </div>
+
+        <p class="form__text form__text--double-space">Actividades o Tour diarios pueden ser compartido o privado</p>
+
+        <div class="form__element">
+            <input type="checkbox" value="acepto" class="viaje">
+            <span class="form__text"> Tours combinados, hotel.</span>
+        </div>
+
+        <div class="form__element">
+            <input type="checkbox" value="acepto" class="viaje">
+            <span class="form__text"> Tours empaquetados.</span>
+        </div>
+		
+		
+        <div class="form__element">
+            <span class="form__text form__text--required">Nombre y apellido: </span> 
+            <input class="form__text-input" type="text" id="nombre" value="" pattern="^[a-zA-Z\s]+$" title="solo se aceptan letras" placeholder="nombre" required/>
+        </div>
+		
+        <div class="form__element">
+            <span class="form__text form__text--required">E-mail: </span> 
+            <input class="form__text-input" type="email" name="direccioncorreo" 
+            pattern=".+@[gG][mM][aA][iI][lL][.][cC][oO][mM]" placeholder="E-mail"
+             title="Solo se permiten cuentas de Gmail.com" required/>
+        </div>
+		
+		
+        <div class="form__element">
+            <span class="form__text form__text--required">Teléfono: </span> 
+            <input class="form__text-input" type="text" pattern="\d{8}$" placeholder="Teléfono" required="required"/>
+        </div>
+		
+        <div class="form__element">
+            <span class="form__text form__text--required">Ciudad: </span> 
+            <input class="form__text-input" type="text" id="ciudad" value="" pattern="^[a-zA-Z\s]+$" 
+               title="Solo se acepta letras" placeholder="Ciudad" required/>
+        </div>
+		
+        <div class="form__element">
+            <span class="form__text form__text--required">País de residencia: </span> 
+            <input class="form__text-input"  type="text" id="país" value="" pattern="^[a-zA-Z\s]+$" 
+               title="Solo se acepta letras" placeholder="País" required/>
+        </div>
+
+        <div class="form__element">
+            <input type="checkbox" value="acepto"/>
+            <span class="form__text"> Acepto Terminos, Condiciones y Politiva de Privacidad</span>
+        </div>
+
+        <button class="boton" type="submit" >Solicitar mi viaje</button>
+					
+	</form>
+	
+	</section>
+   
+    <footer class="footer-container">
+        <ul class="contact"> 
+            <li class="contact-element">
+                <a class="display-contact" href="#">
+                    <span class="display-contact__icon display-contact__icon--whatsapp"></span>
+                    <span class="display-contact__text">Whatsapp: (503) 0000-0000</span>
+                </a>
+            </li>
+
+            <li class="contact-element">
+                <a class="display-contact" href="#">
+                    <span class="display-contact__icon display-contact__icon--instagram"></span>
+                    <span class="display-contact__text">Instagram: @user</span>
+                </a>
+            </li>
+
+            <li class="contact-element">
+                <a class="display-contact" href="#">
+                    <span class="display-contact__icon display-contact__icon--facebook"></span>
+                    <span class="display-contact__text">Facebook: @user</span>
+                </a>
+            </li>
+
+            <li class="contact-element">
+                <a class="display-contact" href="#">
+                    <span class="display-contact__icon display-contact__icon--phone"></span>
+                    <span class="display-contact__text">Número de telefono: (503) 0000-0000</span>
+                </a>
+            </li>
+        </ul>  
+    </footer>
+</body>
+	
+</html>

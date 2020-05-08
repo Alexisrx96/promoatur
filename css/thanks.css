@@ -1,0 +1,12 @@
+.content--thx{
+    flex-direction: column;
+}
+.content__tittle{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+.content__img{
+    width: 6.5rem;
+    height: 6.5rem;
+}
